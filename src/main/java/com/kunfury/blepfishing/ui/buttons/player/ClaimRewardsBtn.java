@@ -8,7 +8,6 @@ import com.kunfury.blepfishing.ui.panels.player.PlayerPanel;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.Sound;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
@@ -29,9 +28,6 @@ public class ClaimRewardsBtn extends MenuButton {
         ItemStack item = new ItemStack(Material.DIAMOND);
         ItemMeta m = item.getItemMeta();
         assert m != null;
-
-        m.addEnchant(Enchantment.FORTUNE, 1, true);
-        m.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 
         List<String> lore = new ArrayList<>();
 
