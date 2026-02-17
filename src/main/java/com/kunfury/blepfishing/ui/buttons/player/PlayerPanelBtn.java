@@ -4,7 +4,6 @@ import com.kunfury.blepfishing.helpers.Formatting;
 import com.kunfury.blepfishing.ui.objects.MenuButton;
 import com.kunfury.blepfishing.ui.panels.player.PlayerPanel;
 import org.bukkit.Material;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
@@ -18,9 +17,6 @@ public class PlayerPanelBtn extends MenuButton {
         assert m != null;
 
         m.setDisplayName(Formatting.GetLanguageString("UI.Player.Buttons.panel"));
-
-        m.addEnchant(Enchantment.FORTUNE, 1, true);
-        m.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 
         item.setItemMeta(m);
 
