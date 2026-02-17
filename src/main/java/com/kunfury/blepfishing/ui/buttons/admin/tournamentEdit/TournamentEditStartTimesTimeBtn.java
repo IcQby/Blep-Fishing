@@ -56,7 +56,7 @@ public class TournamentEditStartTimesTimeBtn extends MenuButton {
         if(time == null){
             m.setDisplayName(ChatColor.GREEN + "Create New");
             item.setItemMeta(m);
-            item.setType(Material.TURTLE_SCUTE);
+            item.setType(Material.SCUTE);
             return item;
         }
 

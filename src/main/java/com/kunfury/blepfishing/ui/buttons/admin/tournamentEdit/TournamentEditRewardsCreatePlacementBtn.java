@@ -21,7 +21,7 @@ public class TournamentEditRewardsCreatePlacementBtn extends AdminTournamentRewa
 
     public ItemStack buildItemStack(Player player) {
 
-        ItemStack item = new ItemStack(Material.TURTLE_SCUTE);
+        ItemStack item = new ItemStack(Material.SCUTE);
         ItemMeta m = item.getItemMeta();
         assert m != null;
 

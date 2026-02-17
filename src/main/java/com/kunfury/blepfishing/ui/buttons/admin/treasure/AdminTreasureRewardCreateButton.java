@@ -16,7 +16,7 @@ public class AdminTreasureRewardCreateButton extends AdminTreasureButton {
 
     @Override
     public ItemStack buildItemStack(Player player) {
-        Material mat = Material.TURTLE_SCUTE;
+        Material mat = Material.SCUTE;
 
         ItemStack item = new ItemStack(mat);
         ItemMeta m = item.getItemMeta();
