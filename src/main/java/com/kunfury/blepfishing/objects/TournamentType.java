@@ -136,7 +136,7 @@ public class TournamentType {
         lore.addAll(finalLoreList);
 
         m.setLore(lore);
-        m.setInstrument(MusicInstrument.SING_GOAT_HORN);
+        m.setInstrument(MusicInstrument.GOAT_HORN);
 
         PersistentDataContainer dataContainer = m.getPersistentDataContainer();
         dataContainer.set(ItemHandler.TourneyTypeId, PersistentDataType.STRING, Id);
