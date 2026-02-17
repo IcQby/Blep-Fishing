@@ -100,10 +100,8 @@ public class FishBag {
         player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1f, 1f);
 
         if(Pickup){
-            bag.addUnsafeEnchantment(Enchantment.UNBREAKING, 1);
             player.sendMessage(Formatting.GetFormattedMessage("Equipment.Fish Bag.pickupEnabled"));
         }else{
-            bag.removeEnchantment(Enchantment.UNBREAKING);
             player.sendMessage(Formatting.GetFormattedMessage("Equipment.Fish Bag.pickupDisabled"));
         }
 
@@ -405,8 +403,6 @@ public class FishBag {
         m.setCustomModelData(ItemHandler.BagModelData);
         m.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         bag.setItemMeta(m);
-
-        bag.addUnsafeEnchantment(Enchantment.UNBREAKING, 1);
 
         return bag;
     }
