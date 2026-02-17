@@ -8,7 +8,6 @@ import com.kunfury.blepfishing.objects.FishingArea;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerFishEvent;
 import org.bukkit.inventory.ItemFlag;
@@ -152,8 +151,6 @@ public class CompassPiece extends TreasureType{
         lore.add(Formatting.GetLanguageString("Treasure.Compass.use"));
 
         compassMeta.setLore(lore);
-        compassMeta.addEnchant(Enchantment.LUCK_OF_THE_SEA, 1, false);
-        compassMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 
         compassMeta.getPersistentDataContainer().set(ItemHandler.CompassKey, PersistentDataType.INTEGER, -1);
 
