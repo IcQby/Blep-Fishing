@@ -399,7 +399,6 @@ public class FishBag {
         m.setLore(lore);
 
         m.setCustomModelData(ItemHandler.BagModelData);
-        m.addItemFlags(ItemFlag.HIDE_NTS);
         bag.setItemMeta(m);
 
         return bag;
