@@ -13,7 +13,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.Sound;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemFlag;
@@ -316,7 +315,6 @@ public class FishBag {
         itemMeta.setLore(GenerateLore());
 
         itemMeta.setCustomModelData(ItemHandler.BagModelData);
-        itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 
 
         item.setItemMeta(itemMeta);
@@ -401,7 +399,7 @@ public class FishBag {
         m.setLore(lore);
 
         m.setCustomModelData(ItemHandler.BagModelData);
-        m.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+        m.addItemFlags(ItemFlag.HIDE_NTS);
         bag.setItemMeta(m);
 
         return bag;
