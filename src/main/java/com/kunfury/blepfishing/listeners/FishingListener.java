@@ -183,7 +183,7 @@ public class FishingListener implements Listener {
 
         Utilities.Announce(textComponent);
 
-        Firework fw = (Firework) player.getWorld().spawnEntity(player.getLocation(), EntityType.FIREWORK_ROCKET);
+        Firework fw = (Firework) player.getWorld().spawnEntity(player.getLocation(), EntityType.FIREWORK);
         fw.detonate();
     }
 
